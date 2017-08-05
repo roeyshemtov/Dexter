@@ -19,9 +19,10 @@ trait Connection {
 
   /**
     * Save the impala query into the database.
+    *
     * @param impalaQuery object representing an Impala query.
     */
-  def saveQuery(impalaQuery : ImpalaQuery)
+  def saveQuery(impalaQuery: ImpalaQuery)
 
   /**
     * Close the connection with the data base.
