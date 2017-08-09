@@ -1,6 +1,6 @@
-package connection
+package com.cloudera.impala.dexter.connection
 
-import utill.ImpalaQuery
+import com.cloudera.impala.dexter.utill.ImpalaQuery
 
 /**
   * Created by ShemTov on 05/08/2017.
@@ -25,7 +25,7 @@ trait Connection {
   def saveQuery(impalaQuery: ImpalaQuery)
 
   /**
-    * Close the connection with the data base.
+    * Close the com.cloudera.impala.dexter.connection with the data base.
     */
   def close()
 

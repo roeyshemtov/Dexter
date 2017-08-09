@@ -1,7 +1,7 @@
-package killer
+package com.cloudera.impala.dexter.killer
 
-import exceptions.ImpalaQueryKillException
-import utill.ImpalaQuery
+import com.cloudera.impala.dexter.exceptions.ImpalaQueryKillException
+import com.cloudera.impala.dexter.utill.ImpalaQuery
 
 /**
   * Created by ShemTov on 05/08/2017.

@@ -1,4 +1,4 @@
-package exceptions
+package com.cloudera.impala.dexter.exceptions
 
 /**
   * Created by ShemTov on 05/08/2017.
