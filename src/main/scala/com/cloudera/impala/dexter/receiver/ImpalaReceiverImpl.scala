@@ -33,10 +33,10 @@ class ImpalaReceiverImpl() extends ImpalaReceiver {
         .param("filter", s"($filter)")
         .asString
 
-      // Happens when trying to connect cloudera-manager with wrong username or password
+      // Happen when trying to connect cloudera-manager with wrong username or password
       if (httpResponse.code == 401)
         throw new DexterAuthException("Failed Conneting to CM, Wrong Username or Password")
-      // Happens out when Internal server error occur(e.g service monitor down,filter no acceptable).
+      // Happen when Internal server error occur(e.g service monitor down,filter no acceptable).
       if (httpResponse.code == 500)
         throw new RuntimeException(httpResponse.body)
 
