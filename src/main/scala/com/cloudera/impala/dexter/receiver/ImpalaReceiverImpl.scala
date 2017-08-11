@@ -56,7 +56,7 @@ class ImpalaReceiverImpl() extends ImpalaReceiver {
     * Creates from the Json String Sequence Of Impala Queries
     *
     * @param queriesJson String represent Json of impala queries
-    * @return seq of Impala queries objects.
+    * @return Array of Impala queries objects.
     */
   private def createImpalaQueriesFromJson(queriesJson: String): Array[ImpalaQuery] = {
     val queries = decode[ImpalaQueries](queriesJson)
