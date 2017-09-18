@@ -1,6 +1,5 @@
 package com.cloudera.impala.dexter.factory
 
-import com.cloudera.impala.dexter.utill.ImpalaQuery
 import com.cloudera.impala.dexter.connection.Connection
 import com.cloudera.impala.dexter.killer.ImpalaKiller
 import com.cloudera.impala.dexter.receiver.ImpalaReceiver
@@ -35,12 +34,5 @@ trait ImpalaFactory {
     */
   def createConnection: Connection
 
-  /**
-    * Creates from the Json String Sequence Of Impala Queries
-    *
-    * @param queriesJson String represent Json of impala queries
-    * @return seq of Impala queries objects.
-    */
-  def createImpalaQueriesFromJson(queriesJson: String): Seq[ImpalaQuery]
 
 }
